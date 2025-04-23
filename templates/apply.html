@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="mt-5">Apply for a Job</h2>
+        <form action="{{ url_for('apply') }}" method="POST" class="mt-4">
+            <!-- Job ID (Hidden Field) -->
+            <input type="hidden" name="j_id" value="{{ job_id }}"> <!-- Pass the job_id from backend -->
+
+            <!-- Optional: Show job title here for the user -->
+            <div class="form-group">
+                <label for="job_title">Job Title</label>
+                <input type="text" class="form-control" id="job_title" value="{{ job_title }}" disabled>
+            </div>
+
+            <!-- Optional: Show job description here -->
+            <div class="form-group">
+                <label for="job_description">Job Description</label>
+                <textarea class="form-control" id="job_description" rows="4" disabled>{{ job_description }}</textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary">Apply</button>
+        </form>
+    </div>
+
+    <!-- Optional: Include Bootstrap JS (for modal or form validation if needed) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
