@@ -1,13 +1,13 @@
 # Online-JobPortal
 Database Management System Course Project
 
-Hosted on https://github.com/Rishabhag123/Online-JobPortal
+Hosted on https://github.com/shivdhan739/Online-Job-Portal
 
 <pre>
-Rishabh Agarwal
-MIS - 111807069
-TY Computer Engineering
-Division - 2
+Shivdhan Shirgole
+College - SSIEMS ,Parbhani
+BE Computer Engineering
+
 </pre>
 
 ### Project Description - 
